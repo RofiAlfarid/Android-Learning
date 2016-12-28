@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rofimuslimalfarid.androidbasic.MainActivity">
 
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -18,12 +19,35 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:ems="10"
+            android:id="@+id/nama"
+            tools:text="your name" />
+
         <TextView
-            android:text="Quantity"
+            android:text="@string/topings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/textView121" />
+
+        <CheckBox
+            android:text="@string/granule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/checkBox" />
+
+        <TextView
+            android:text="@string/quantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:id="@+id/textView12" />
+
 
 
         <LinearLayout
@@ -59,7 +83,7 @@
         </LinearLayout>
 
         <TextView
-            android:text="Price"
+            android:text="@string/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -72,7 +96,7 @@
             android:layout_margin="8dp"
             android:id="@+id/price_text_view" />
         <Button
-            android:text="order"
+            android:text="@string/order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
